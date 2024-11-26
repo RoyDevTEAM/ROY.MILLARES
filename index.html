@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Royder Millares</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script>
+    // Script para el menú hamburguesa
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+   
+  </script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Header -->
+  <header class="sticky top-0 bg-gray-900 text-white z-50 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <!-- Logo -->
+      <h1 class="text-2xl font-bold text-orange-500 animate-fade-in-down">Royder Millares</h1>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden lg:flex space-x-6">
+        <a href="#" class="hover:text-orange-500 animate-fade-in-left">Inicio</a>
+        <a href="#" class="hover:text-orange-500 animate-fade-in-left">Servicios</a>
+        <a href="#" class="hover:text-orange-500 animate-fade-in-left">Experiencia</a>
+        <a href="#" class="hover:text-orange-500 animate-fade-in-left">Proyectos</a>
+        <a href="#" class="hover:text-orange-500 animate-fade-in-left">Contacto</a>
+        <a href="#" class="hover:text-orange-500 animate-fade-in-left">Acerca de</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button class="lg:hidden" onclick="toggleMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="hidden bg-gray-800 lg:hidden">
+      <ul class="space-y-4 px-6 py-4 text-center">
+        <li><a href="#" class="block text-white hover:text-orange-500">Inicio</a></li>
+        <li><a href="#" class="block text-white hover:text-orange-500">Servicios</a></li>
+        <li><a href="#" class="block text-white hover:text-orange-500">Experiencia</a></li>
+        <li><a href="#" class="block text-white hover:text-orange-500">Proyectos</a></li>
+        <li><a href="#" class="block text-white hover:text-orange-500">Contacto</a></li>
+        <li><a href="#" class="block text-white hover:text-orange-500">Acerca de</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ <!-- Main Content (Hero Section) -->
+<main class="flex items-center justify-center h-screen bg-gray-900 text-white px-6">
+    <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0 lg:space-x-8">
+      <!-- Texto -->
+      <div class="lg:w-1/2 text-center lg:text-left animate-fade-in-left">
+        <p class="text-lg text-gray-300">¡Hola, soy</p>
+        <h1 class="text-4xl font-bold mt-2 leading-tight text-orange-500">
+          Royder Millares
+        </h1>
+        <h2 class="text-3xl font-semibold text-gray-200 mt-2">
+          Ingeniero de Sistemas y Desarrollador Web
+        </h2>
+        <p class="text-gray-400 mt-4 leading-relaxed">
+          Soy un apasionado de la tecnología, especializado en crear soluciones innovadoras y funcionales. Con experiencia en herramientas modernas como <span class="font-semibold text-orange-500">Angular</span> y <span class="font-semibold text-orange-500">Node.js</span>, me enfoco en desarrollar aplicaciones web que combinan diseño, rendimiento y usabilidad. 
+          Estoy siempre en busca de nuevos retos que impulsen el desarrollo tecnológico.
+        </p>
+        <div class="mt-6">
+          <a href="#contacto" class="bg-orange-500 text-white px-6 py-3 rounded-full shadow-lg hover:bg-orange-600 mr-4 transition-all duration-300">Contáctame</a>
+          <a href="#proyectos" class="border-2 border-orange-500 text-orange-500 px-6 py-3 rounded-full shadow-lg hover:bg-orange-100 transition-all duration-300">Mis Proyectos</a>
+        </div>
+      </div>
+      
+      <!-- Imagen -->
+      <div class="lg:w-1/2 mt-8 lg:mt-0 animate-fade-in-right">
+        <div class="w-80 h-80 mx-auto">
+          <img src="assets/perfil.jpeg" alt="Royder Millares" class="rounded-full w-full h-full object-cover shadow-lg">
+        </div>
+      </div>
+    </div>
+  </main>
+  
+<!-- Resumen Profesional -->
+<section id="resumen" class="bg-gray-100 py-16">
+    <div class="container mx-auto px-6 lg:px-20">
+      <div class="text-center">
+        <!-- Título -->
+        <h2 class="text-4xl font-bold text-gray-800 mb-6 animate-fade-in-down">Resumen Profesional</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto animate-fade-in-up">
+          Soy un <span class="font-bold text-orange-500">Ingeniero de Sistemas</span> con más de 
+          <span class="font-bold">3 años de experiencia</span> en el desarrollo de aplicaciones web. Mi especialidad abarca 
+          <span class="text-orange-500">Angular</span>, <span class="text-orange-500">Node.js</span>, y tecnologías modernas. 
+          Disfruto resolver problemas complejos mediante soluciones eficientes y escalables, siempre buscando la excelencia 
+          y la innovación en cada proyecto.
+        </p>
+      </div>
+      <!-- Iconos de Habilidades -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 animate-fade-in-up">
+        <div class="flex items-center justify-center flex-col">
+          <i class="fas fa-laptop-code text-orange-500 text-5xl mb-4"></i>
+          <h3 class="text-xl font-semibold text-gray-800">Desarrollo Frontend</h3>
+          <p class="text-gray-600 text-center">Experto en Angular, TypeScript, y Tailwind CSS para interfaces modernas.</p>
+        </div>
+        <div class="flex items-center justify-center flex-col">
+          <i class="fas fa-server text-orange-500 text-5xl mb-4"></i>
+          <h3 class="text-xl font-semibold text-gray-800">Backend Escalable</h3>
+          <p class="text-gray-600 text-center">Construyo APIs robustas con Node.js, Express, y bases de datos modernas.</p>
+        </div>
+        <div class="flex items-center justify-center flex-col">
+          <i class="fas fa-cogs text-orange-500 text-5xl mb-4"></i>
+          <h3 class="text-xl font-semibold text-gray-800">Optimización y Rendimiento</h3>
+          <p class="text-gray-600 text-center">Me apasiona optimizar aplicaciones para un rendimiento y escalabilidad óptimos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Habilidades Técnicas y Blandas -->
+<section id="habilidades" class="bg-white py-16">
+    <div class="container mx-auto px-6 lg:px-20">
+      <div class="text-center">
+        <!-- Título -->
+        <h2 class="text-4xl font-bold text-gray-800 mb-6 animate-fade-in-down">Habilidades</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto animate-fade-in-up">
+          Un conjunto sólido de habilidades técnicas y blandas que me permiten adaptarme a diversos proyectos y colaborar de manera efectiva en equipos multidisciplinarios.
+        </p>
+      </div>
+  
+      <!-- Habilidades Técnicas -->
+      <div class="mt-12">
+        <h3 class="text-2xl font-semibold text-orange-500 mb-4 text-center animate-fade-in-down">Habilidades Técnicas</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 animate-fade-in-up">
+          <!-- Categoría: Frontend -->
+          <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+            <i class="fas fa-code text-orange-500 text-3xl mb-4"></i>
+            <h4 class="text-lg font-semibold text-gray-800">Frontend</h4>
+            <p class="text-gray-600 mt-2">Angular, HTML5, CSS3, Tailwind CSS, TypeScript.</p>
+          </div>
+          <!-- Categoría: Backend -->
+          <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+            <i class="fas fa-server text-orange-500 text-3xl mb-4"></i>
+            <h4 class="text-lg font-semibold text-gray-800">Backend</h4>
+            <p class="text-gray-600 mt-2">Node.js, Express.js, NestJS.</p>
+          </div>
+          <!-- Categoría: Bases de Datos -->
+          <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+            <i class="fas fa-database text-orange-500 text-3xl mb-4"></i>
+            <h4 class="text-lg font-semibold text-gray-800">Bases de Datos</h4>
+            <p class="text-gray-600 mt-2">MySQL, MongoDB.</p>
+          </div>
+          <!-- Categoría: Herramientas -->
+          <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+            <i class="fas fa-tools text-orange-500 text-3xl mb-4"></i>
+            <h4 class="text-lg font-semibold text-gray-800">Herramientas</h4>
+            <p class="text-gray-600 mt-2">Git, Docker, Postman, Figma.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Habilidades Blandas -->
+      <div class="mt-16">
+        <h3 class="text-2xl font-semibold text-orange-500 mb-4 text-center animate-fade-in-down">Habilidades Blandas</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in-up">
+          <!-- Habilidad 1 -->
+          <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+            <i class="fas fa-comments text-orange-500 text-3xl mb-4"></i>
+            <h4 class="text-lg font-semibold text-gray-800">Comunicación</h4>
+            <p class="text-gray-600 mt-2">Habilidad para transmitir ideas de manera clara y efectiva en equipos diversos.</p>
+          </div>
+          <!-- Habilidad 2 -->
+          <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+            <i class="fas fa-users text-orange-500 text-3xl mb-4"></i>
+            <h4 class="text-lg font-semibold text-gray-800">Trabajo en Equipo</h4>
+            <p class="text-gray-600 mt-2">Experiencia colaborando en proyectos multidisciplinarios con enfoque en resultados.</p>
+          </div>
+          <!-- Habilidad 3 -->
+          <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+            <i class="fas fa-lightbulb text-orange-500 text-3xl mb-4"></i>
+            <h4 class="text-lg font-semibold text-gray-800">Resolución de Problemas</h4>
+            <p class="text-gray-600 mt-2">Capacidad para analizar problemas complejos y ofrecer soluciones creativas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Proyectos Destacados -->
+<section id="proyectos" class="bg-gray-50 py-16">
+    <div class="container mx-auto px-6 lg:px-20">
+      <div class="text-center">
+        <!-- Título -->
+        <h2 class="text-4xl font-bold text-gray-800 mb-6 animate-fade-in-down">Proyectos Destacados</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto animate-fade-in-up">
+          Una selección de proyectos en los que he trabajado, demostrando mis habilidades en diseño, desarrollo y optimización de soluciones tecnológicas.
+        </p>
+      </div>
+  
+      <!-- Lista de Proyectos -->
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in-up">
+        <!-- Proyecto 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <img src="https://parzibyte.me/blog/wp-content/uploads/2021/03/Reporte-individual-de-tareas-con-tareas-entregadas-y-faltantes-en-programa-para-gestion-escolar.png" alt="Sistema de Gestión Escolar" class="rounded-lg w-full mb-4">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Sistema de Gestión Escolar</h3>
+          <p class="text-gray-600 mb-4">
+            Desarrollé una aplicación que permite a los padres rastrear el progreso académico de sus hijos.
+          </p>
+          <p class="text-sm text-gray-500 mb-4">Tecnologías: Angular, Node.js, MongoDB.</p>
+          <div class="flex justify-between items-center">
+            <a href="#" class="text-orange-500 font-medium hover:text-orange-600 transition-all">Ver Proyecto</a>
+            <a href="#" class="text-gray-500 hover:text-gray-700 transition-all">
+              <i class="fab fa-github"></i> Código en GitHub
+            </a>
+          </div>
+        </div>
+  
+        <!-- Proyecto 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1683497560206/46862776-a7ab-493c-943b-36f9ab138e92.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp" alt="Tienda Online" class="rounded-lg w-full mb-4">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Tienda Online</h3>
+          <p class="text-gray-600 mb-4">
+            Creé una plataforma de comercio electrónico con carrito de compras, pasarela de pagos y panel administrativo.
+          </p>
+          <p class="text-sm text-gray-500 mb-4">Tecnologías: React, Firebase, Tailwind CSS.</p>
+          <div class="flex justify-between items-center">
+            <a href="#" class="text-orange-500 font-medium hover:text-orange-600 transition-all">Ver Proyecto</a>
+            <a href="#" class="text-gray-500 hover:text-gray-700 transition-all">
+              <i class="fab fa-github"></i> Código en GitHub
+            </a>
+          </div>
+        </div>
+  
+        <!-- Proyecto 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <img src="https://cdn.prod.website-files.com/62685058d179ab5ae11b4e6a/64bf7a3f9414ccc20d4bbf90_Reseller%20Portal%20(1).webp" alt="Sistema de Reservas" class="rounded-lg w-full mb-4">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Sistema de Reservas</h3>
+          <p class="text-gray-600 mb-4">
+            Diseñé un sistema para la gestión de reservas de eventos con opciones de personalización para los clientes.
+          </p>
+          <p class="text-sm text-gray-500 mb-4">Tecnologías: Laravel, Vue.js, MySQL.</p>
+          <div class="flex justify-between items-center">
+            <a href="#" class="text-orange-500 font-medium hover:text-orange-600 transition-all">Ver Proyecto</a>
+            <a href="#" class="text-gray-500 hover:text-gray-700 transition-all">
+              <i class="fab fa-github"></i> Código en GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Certificaciones -->
+<section id="certificaciones" class="bg-white py-16">
+    <div class="container mx-auto px-6 lg:px-20">
+      <!-- Título -->
+      <div class="text-center">
+        <h2 class="text-4xl font-bold text-gray-800 mb-6 animate-fade-in-down">Certificaciones</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto animate-fade-in-up">
+          Reconocimientos y certificaciones que avalan mi experiencia en tecnologías y metodologías clave para el desarrollo y la gestión de proyectos.
+        </p>
+      </div>
+  
+      <!-- Lista de Certificaciones -->
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in-up">
+        <!-- Certificación 1 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Certificado de Desarrollo Web Avanzado</h3>
+          <p class="text-gray-600">Udemy, 2023</p>
+          <div class="mt-4">
+            <a href="#" class="text-orange-500 font-medium hover:text-orange-600 transition-all">Ver Certificado</a>
+          </div>
+        </div>
+  
+        <!-- Certificación 2 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Scrum Fundamentals Certified</h3>
+          <p class="text-gray-600">Scrum Alliance, 2022</p>
+          <div class="mt-4">
+            <a href="#" class="text-orange-500 font-medium hover:text-orange-600 transition-all">Ver Certificado</a>
+          </div>
+        </div>
+  
+        <!-- Certificación 3 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Certificación en AWS Cloud Practitioner</h3>
+          <p class="text-gray-600">AWS, 2021</p>
+          <div class="mt-4">
+            <a href="#" class="text-orange-500 font-medium hover:text-orange-600 transition-all">Ver Certificado</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Reconocimientos y Logros -->
+<section id="logros" class="bg-white py-16">
+    <div class="container mx-auto px-6 lg:px-20">
+      <!-- Título -->
+      <div class="text-center">
+        <h2 class="text-4xl font-bold text-gray-800 mb-6 animate-fade-in-down">Reconocimientos y Logros</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto animate-fade-in-up">
+          A lo largo de mi carrera, he tenido la oportunidad de participar y destacar en competencias y eventos tecnológicos. Aquí algunos de los logros más importantes:
+        </p>
+      </div>
+  
+      <!-- Lista de Logros -->
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Logro 1 -->
+        <div class="bg-gray-100 rounded-lg shadow-lg p-6 animate-fade-in-up">
+          <img src="assets/acm-tarija.jpeg" alt="ACM Tarija 2024" class="rounded-md mb-4">
+          <h3 class="text-2xl font-semibold text-gray-800">Participación en ACM 2024</h3>
+          <p class="text-gray-700 mt-2">
+            Clasifiqué en la competencia regional ACM 2024 y representé a Bolivia en la fase Latinoamericana realizada en Tarija. Una experiencia enriquecedora en resolución de problemas algorítmicos.
+          </p>
+        </div>
+  
+        <!-- Logro 2 -->
+        <div class="bg-gray-100 rounded-lg shadow-lg p-6 animate-fade-in-up">
+          <img src="assets/hackaton-agetic.jpeg" alt="Hackatón AGETIC Tarija" class="rounded-md mb-4">
+          <h3 class="text-2xl font-semibold text-gray-800">Hackatón AGETIC - Tarija</h3>
+          <p class="text-gray-700 mt-2">
+            Participé en el Hackatón organizado por la AGETIC en Tarija, desarrollando soluciones innovadoras en tecnología cívica. Este evento me permitió conectar con profesionales y compartir ideas.
+          </p>
+        </div>
+  
+        <!-- Logro 3 (Opcional, agrega más si es necesario) -->
+        <div class="bg-gray-100 rounded-lg shadow-lg p-6 animate-fade-in-up">
+          <img src="assets/logro-adicional.jpeg" alt="Logro Adicional" class="rounded-md mb-4">
+          <h3 class="text-2xl font-semibold text-gray-800">Otro Logro Destacado</h3>
+          <p class="text-gray-700 mt-2">
+            [Puedes describir algún otro premio, certificación o participación importante que resalte tu perfil profesional.]
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Intereses y Pasiones -->
+<section id="intereses" class="bg-gray-50 py-16">
+    <div class="container mx-auto px-6 lg:px-20">
+      <!-- Título -->
+      <div class="text-center">
+        <h2 class="text-4xl font-bold text-gray-800 mb-6 animate-fade-in-up">Intereses y Pasiones</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto animate-fade-in-up">
+          Más allá de la tecnología, tengo una profunda pasión por diversos aspectos que enriquecen tanto mi vida personal como profesional. Estas son algunas de mis motivaciones:
+        </p>
+      </div>
+  
+      <!-- Lista de Intereses -->
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Interés 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg animate-fade-in-up">
+          <img src="assets/ensenanza.jpg" alt="Enseñanza" class="rounded-md mb-4">
+          <h3 class="text-2xl font-semibold text-gray-800">Enseñanza y Mentoring</h3>
+          <p class="text-gray-700 mt-2">
+            Soy apasionado por compartir conocimientos, ya sea mediante mentorías o como profesor. Creo que la educación es clave para transformar el futuro.
+          </p>
+        </div>
+  
+        <!-- Interés 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg animate-fade-in-up">
+          <img src="assets/aprendizaje.jpg" alt="Aprendizaje Continuo" class="rounded-md mb-4">
+          <h3 class="text-2xl font-semibold text-gray-800">Aprendizaje Continuo</h3>
+          <p class="text-gray-700 mt-2">
+            Siempre estoy en la búsqueda de nuevas tecnologías, tendencias y habilidades que me permitan crecer y mejorar como profesional.
+          </p>
+        </div>
+  
+        <!-- Interés 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg animate-fade-in-up">
+          <img src="assets/desarrollo-tecnologia.jpg" alt="Desarrollo de Tecnología" class="rounded-md mb-4">
+          <h3 class="text-2xl font-semibold text-gray-800">Desarrollo de la Tecnología en Bolivia</h3>
+          <p class="text-gray-700 mt-2">
+            Me motiva contribuir al crecimiento y fortalecimiento del ecosistema tecnológico en Bolivia, ayudando a crear soluciones innovadoras.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contacto -->
+<section id="contacto" class="bg-gray-100 py-16">
+    <div class="container mx-auto px-6 lg:px-20">
+      <!-- Título -->
+      <div class="text-center">
+        <h2 class="text-4xl font-bold text-gray-800 mb-6 animate-fade-in-down">Contacto</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto animate-fade-in-up">
+          Estoy disponible para discutir proyectos, colaboraciones o cualquier consulta. ¡No dudes en comunicarte conmigo!
+        </p>
+      </div>
+  
+      <!-- Formulario y Links -->
+      <div class="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-12 animate-fade-in-up">
+        <!-- Información de Contacto -->
+        <div class="flex flex-col justify-center items-center bg-white p-8 rounded-lg shadow-lg">
+          <div class="mb-6">
+            <p class="text-lg text-gray-700 font-semibold">
+              <i class="fas fa-envelope text-orange-500 mr-2"></i> Correo:
+            </p>
+            <p class="text-gray-600">royder.millares@example.com</p>
+          </div>
+          <div class="mb-6">
+            <p class="text-lg text-gray-700 font-semibold">
+              <i class="fas fa-phone-alt text-orange-500 mr-2"></i> Teléfono:
+            </p>
+            <p class="text-gray-600">+591 123 456 789</p>
+          </div>
+          <div>
+            <p class="text-lg text-gray-700 font-semibold">
+              <i class="fab fa-linkedin text-orange-500 mr-2"></i> LinkedIn:
+            </p>
+            <a href="https://linkedin.com/in/royder-millares" target="_blank" class="text-orange-500 hover:text-orange-600 transition-all">
+              linkedin.com/in/royder-millares
+            </a>
+          </div>
+        </div>
+  
+        <!-- Formulario de Contacto -->
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <form action="#" method="POST">
+            <div class="mb-6">
+              <label for="name" class="block text-gray-700 font-medium mb-2">Nombre</label>
+              <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+            </div>
+            <div class="mb-6">
+              <label for="email" class="block text-gray-700 font-medium mb-2">Correo Electrónico</label>
+              <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+            </div>
+            <div class="mb-6">
+              <label for="message" class="block text-gray-700 font-medium mb-2">Mensaje</label>
+              <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required></textarea>
+            </div>
+            <button type="submit" class="w-full bg-orange-500 text-white py-3 rounded-lg shadow-lg hover:bg-orange-600 transition-all">
+              Enviar Mensaje
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+<footer class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto px-6 lg:px-20">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
+        <!-- Columna 1: Información -->
+        <div class="space-y-4 animate-fade-in-up">
+          <h3 class="text-xl font-semibold">Sobre mí</h3>
+          <p class="text-gray-400">
+            Ingeniero de Sistemas y desarrollador web apasionado por la tecnología y la enseñanza. Comprometido con la creación de soluciones innovadoras.
+          </p>
+        </div>
+  
+        <!-- Columna 2: Enlaces rápidos -->
+        <div class="space-y-4 animate-fade-in-up">
+          <h3 class="text-xl font-semibold">Enlaces</h3>
+          <ul class="space-y-2">
+            <li><a href="#proyectos" class="hover:text-orange-500">Mis Proyectos</a></li>
+            <li><a href="#habilidades" class="hover:text-orange-500">Habilidades</a></li>
+            <li><a href="#contacto" class="hover:text-orange-500">Contacto</a></li>
+            <li><a href="#certificaciones" class="hover:text-orange-500">Certificaciones</a></li>
+          </ul>
+        </div>
+  
+        <!-- Columna 3: Redes Sociales -->
+        <div class="space-y-4 animate-fade-in-up">
+          <h3 class="text-xl font-semibold">Sígueme</h3>
+          <div class="flex space-x-6">
+            <a href="https://linkedin.com/in/royder-millares" target="_blank" class="text-gray-400 hover:text-orange-500">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/royder-millares" target="_blank" class="text-gray-400 hover:text-orange-500">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="https://twitter.com/royder_millares" target="_blank" class="text-gray-400 hover:text-orange-500">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+          </div>
+        </div>
+  
+        <!-- Columna 4: Contacto -->
+        <div class="space-y-4 animate-fade-in-up">
+          <h3 class="text-xl font-semibold">Contacto</h3>
+          <ul class="space-y-2">
+            <li><a href="mailto:royder.millares@example.com" class="hover:text-orange-500">royder.millares@example.com</a></li>
+            <li><a href="tel:+591123456789" class="hover:text-orange-500">+591 123 456 789</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Pie de página -->
+      <div class="text-center mt-12 text-gray-400 animate-fade-in-up">
+        <p>&copy; 2024 Royder Millares. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FontAwesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Tailwind Animations -->
+  <style>
+    .animate-fade-in-down {
+      animation: fadeInDown 1s ease-in-out;
+    }
+    .animate-fade-in-left {
+      animation: fadeInLeft 1s ease-in-out;
+    }
+    .animate-fade-in-right {
+      animation: fadeInRight 1s ease-in-out;
+    }
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translateX(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 1s ease-in-out forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-in-down {
+    animation: fadeInDown 1s ease-in-out forwards;
+    opacity: 0;
+  }
+  </style>
+
+<!-- Script para efectos al hacer scroll -->
+<script>
+    document.addEventListener("scroll", () => {
+      const elements = document.querySelectorAll(".animate-fade-in-up, .animate-fade-in-down");
+      const triggerHeight = window.innerHeight * 0.85;
+  
+      elements.forEach((el) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < triggerHeight) {
+          el.style.opacity = "1";
+          el.style.animationPlayState = "running";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
